@@ -12,14 +12,14 @@ const App = () => {
   return (
     <div>
       {/* Do not remove the main div */}
-       <h5>Enter your name:</h5>
+       <h1>Enter your name:</h1>
       <input
         type="text"
         value={name}
         onChange={handleInputChange}
         placeholder="Enter your name" 
       />
-      {name && <h6>Hello, {name}!</h6>}    
+      {name && <h2>Hello, {name}!</h2>}    
     </div>
   );
 }
