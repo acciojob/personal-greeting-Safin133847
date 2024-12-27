@@ -10,16 +10,17 @@ const App = () => {
 
   return (
     <div>
+      {/* Do not remove the main div */}
       <h1>Enter your name:</h1>
       <input
         type="text"
-        value={name} 
-        onChange={handleInputChange} 
-        placeholder="Enter your name"
+        value={name}
+        onChange={handleInputChange}
+        placeholder="Enter your name" 
       />
-      {name && <h2>Hello, {name}!</h2>}
+      {name && <h2>Hello {name}!</h2>} 
     </div>
   );
-};
+}
 
 export default App;
